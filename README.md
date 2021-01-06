@@ -25,6 +25,7 @@ In order to compare the results with the happiness score in the Happiness datase
 Results were gathered from 2/1/2021 to 5/1/2021 and saved in a csv file called 'twitter_analysis':
 (timestamp, country, average polarity, average subjectivity)
 
+```sh
 2021-01-02 00:00:00.613030,Finland,0.11566964285714285,0.42839285714285724
 2021-01-02 00:00:00.613324,Central African Republic,0.07341964285714286,0.3185119047619048
 2021-01-03 00:00:00.684335,Finland,0.14617063492063492,0.38214285714285723
@@ -33,9 +34,11 @@ Results were gathered from 2/1/2021 to 5/1/2021 and saved in a csv file called '
 2021-01-04 00:00:00.437814,Central African Republic,0.006689453125,0.1675
 2021-01-05 00:00:00.315664,Finland,0.10702245670995672,0.4261165223665223
 2021-01-05 00:00:00.316009,Central African Republic,0.08895535714285714,0.20776785714285712
+```
 
 Then, values for each country were totalled in the last task in the dag called 'CompareResultsTask':
 
+```sh
 [2021-01-06 22:53:53,586] {logging_mixin.py:112} INFO - ----------------------------------------
 [2021-01-06 22:53:53,586] {logging_mixin.py:112} INFO - Happiness Score:
 [2021-01-06 22:53:53,586] {logging_mixin.py:112} INFO - Finland: 7.537799972534181
@@ -44,6 +47,7 @@ Then, values for each country were totalled in the last task in the dag called '
 [2021-01-06 22:53:53,586] {logging_mixin.py:112} INFO - Total Polarity so far:
 [2021-01-06 22:53:53,586] {logging_mixin.py:112} INFO - Finland: 0.4731809163059163
 [2021-01-06 22:53:53,586] {logging_mixin.py:112} INFO - Central African Republic 0.29823111979166667
+```
 
 We can see overall that **Finland** (with a happiness score of 7.53 approx.) has a higher polarity than **Central African Republic** (with a happiness score of 3.13 approx.). Therefore, we can conclude that happiness score affects the polarity of people's tweets. Also, according to the results, the tweets are overall positive (polarity scores accross the 4 days are larger than zero for both countries). This shows that even countries with low happiness scores still have positive tweets.
 
