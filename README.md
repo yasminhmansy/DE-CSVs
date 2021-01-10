@@ -1,6 +1,3 @@
-# DE-CSVs
-CSVs for Data Engineering
-
 ## Milestone 3: Twitter Sentiment Analysis Pipeline
 
 ### 1. Choosing countries to analyze
